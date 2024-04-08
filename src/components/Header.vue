@@ -11,7 +11,11 @@ import { store } from '../data/store';
         },
         methods:{
             getPathImage(imageName){
-                return new URL (`/public/assets/img/${imageName}`, import.meta.url).href
+                return new URL (`/public/assets/img/${imageName}`, import.meta.url).href;
+            },
+
+            getPathSVG(svgName){
+                return new URL (`/public/assets/svg/${svgName}`, import.meta.url).href;
             }
         }
         
@@ -23,10 +27,11 @@ import { store } from '../data/store';
         <div class="logo-navbar">
             <img :src="getPathImage('logo-sidearea-1-1.png')" :alt="logo">
         </div>
-        <div class="link-navbar">
+        <div class="link-navbar d-flex ">
 
             <a v-for="(link, index) in store.links" :key="index" :href="link.url">{{ link.text }}</a>
-            <i class="fa-solid fa-list-ul"></i>
+            <!-- <i class="fa-solid fa-list-ul"></i> -->
+            <img :src="getPathSVG('svg-1.svg')" :alt="iconaMenu">
 
         </div>
     </div>
@@ -43,22 +48,23 @@ import { store } from '../data/store';
         background-color: bg-color-1;
         border: 1px solid black;
 
-        .logo-navbar{
+            a{
+                padding: 20px;
+                text-decoration: none;
+                color: black;
+                font-size: 0.7rem;
+                font-weight: bold;
+                color: $text-color-9;
+            }
 
-        }
+            i{
+                color: $text-color-9;
+                padding: 20px;
+            }
 
-        a{
-            padding: 20px;
-            text-decoration: none;
-            color: black;
-            font-size: 0.7rem;
-            font-weight: bold;
-            color: $text-color-9;
-        }
-
-        i{
-            color: $text-color-9;
-            padding: 20px;
-        }
+            .link-navbar{
+                margin-right: 20px;
+            }
     }
+    
 </style>
