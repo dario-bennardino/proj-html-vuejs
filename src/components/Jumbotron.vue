@@ -11,7 +11,7 @@ import { store } from '../data/store'
 
 <template>
     <div>
-        Footer
+        jumbotron
     </div>
 </template>
 
