@@ -1,15 +1,17 @@
 <script>
 // import '../assets/scss/partials/_variables.scss'; 
 
-
 import { store } from '../data/store';
-
-
 
     export default {
         data(){
             return{
                 store
+            }
+        },
+        methods:{
+            getPathImage(imageName){
+                return new URL (`/public/assets/img/${imageName}`, import.meta.url).href
             }
         }
         
@@ -18,7 +20,9 @@ import { store } from '../data/store';
 
 <template>
     <div class="navbar">
-        <div class="logo-navbar">logo</div>
+        <div class="logo-navbar">
+            <img :src="getPathImage('logo-sidearea-1-1.png')" :alt="logo">
+        </div>
         <div class="link-navbar">
 
             <a v-for="(link, index) in store.links" :key="index" :href="link.url">{{ link.text }}</a>
@@ -40,7 +44,7 @@ import { store } from '../data/store';
         border: 1px solid black;
 
         .logo-navbar{
-            
+
         }
 
         a{
