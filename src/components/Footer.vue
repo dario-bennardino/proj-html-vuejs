@@ -10,7 +10,7 @@ import { store } from '../data/store'
 </script>
 
 <template>
-    <div>
+    <div class="footer">
         Footer
     </div>
 </template>
@@ -18,5 +18,12 @@ import { store } from '../data/store'
 
 
 <style lang="scss" scoped>
+@import '../assets/scss/partials/variables';
 
+    .footer{
+        height: 135px;
+        width: 100vw;
+        background-color: $bg-color-8;
+        border: 1px solid black;
+    }
 </style>

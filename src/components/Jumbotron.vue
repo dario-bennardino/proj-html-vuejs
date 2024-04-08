@@ -51,18 +51,13 @@ import { store } from '../data/store'
     .jumbotron{
         height: 730px;
         width: 100vw;
-        border: 1px solid black;
-        background-color: $bg-color-7;
         justify-content: center;
         align-items: center;
 
         .container_{
-            
-            // text-align: center;
+
             width: 1600px;
-            height: 500px;
-            // background-color: red;
-            
+            height: 500px;            
 
             .box-text-jumbotron{
                 width: 50%;
@@ -71,8 +66,7 @@ import { store } from '../data/store'
                 padding: 50px;
 
                 h1{
-                    font-size: 4.5rem;
-                    
+                    font-size: 4.5rem;   
                 }
 
                 p{
@@ -87,7 +81,6 @@ import { store } from '../data/store'
                     margin-top: 25px;
                     border: 3px solid $border-colors-2;
                     border-radius: 0;
-
                 }
 
                 .btn:hover{
@@ -98,19 +91,16 @@ import { store } from '../data/store'
 
             .box-img-jumbotron{
                 width: 50%;
-                height: 100%;
-                
+                height: 100%;                
 
                 .box-img-jumbotron-sx{
                     width: 50%;
                     height: 100%;
-                    border: 1px solid black;
                 }
 
                 .box-img-jumbotron-dx{
                     width: 50%;
                     height: 100%;
-                    border: 1px solid black;
                 }
             }
             

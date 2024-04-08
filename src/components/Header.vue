@@ -46,7 +46,6 @@ import { store } from '../data/store';
         height: 90px;
         width: 100vw;
         background-color: bg-color-1;
-        border: 1px solid black;
 
             a{
                 padding: 20px;
