@@ -1,5 +1,6 @@
 <script>
-import '../assets/scss/partials/_variables.scss'; 
+// import '../assets/scss/partials/_variables.scss'; 
+
 
 import { store } from '../data/store';
 
@@ -19,14 +20,9 @@ import { store } from '../data/store';
     <div class="navbar">
         <div class="logo-navbar">logo</div>
         <div class="link-navbar">
-            <a href="#">Home</a>
-            <a href="#">Pages</a>
-            <a href="#">Portfolio</a>
-            <a href="#">Blog</a>
-            <a href="#">Shop</a>
-            <a href="#">Elements</a>
 
-
+            <a v-for="(link, index) in store.links" :key="index" :href="link.url">{{ link.text }}</a>
+            <i class="fa-solid fa-list-ul"></i>
 
         </div>
     </div>
@@ -35,15 +31,30 @@ import { store } from '../data/store';
 
 
 <style lang="scss" scoped>
+@import '../assets/scss/partials/variables';
+
     .navbar{
         height: 90px;
         width: 100vw;
-        background-color: lightgrey;
+        background-color: bg-color-1;
+        border: 1px solid black;
+
+        .logo-navbar{
+            
+        }
 
         a{
-            padding: 5px;
-            // color: $bg-color-3;
+            padding: 20px;
+            text-decoration: none;
             color: black;
+            font-size: 0.7rem;
+            font-weight: bold;
+            color: $text-color-9;
+        }
+
+        i{
+            color: $text-color-9;
+            padding: 20px;
         }
     }
 </style>
