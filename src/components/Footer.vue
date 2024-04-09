@@ -10,9 +10,11 @@ import { store } from '../data/store'
 </script>
 
 <template>
+
     <div class="footer">
         Footer
     </div>
+    
 </template>
 
 
