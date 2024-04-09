@@ -36,8 +36,6 @@ import { store } from '../data/store'
                     <img :src="getPathImage('h-2-slider-img-16.png')" :alt="imgJumbotronDx">
                 </div>
 
-
-                
             </div>
         </div>
     </div>
@@ -56,7 +54,7 @@ import { store } from '../data/store'
 
         .container_{
 
-            width: 1600px;
+            width: 1450px;
             height: 500px;            
 
             .box-text-jumbotron{

@@ -5,7 +5,13 @@ import { store } from '../data/store'
             return{
                 store
             }
+        },
+        methods:{
+            getPathImage(imageName){
+                return new URL (`/public/assets/img/${imageName}`, import.meta.url).href;
+            }
         }
+        
     }
 </script>
 
@@ -14,7 +20,12 @@ import { store } from '../data/store'
     <div class="footer">
         <div class="container">
             <div class="row row-cols-4 h-100">
-                <div class="col-3 d-flex justify-content-center align-items-center ">col</div>
+                <div class="col-3 d-flex justify-content-center align-items-center flex-column ">
+                    <div class="logo-footer">
+                        <img :src="getPathImage('logo-sidearea-1.png')" :alt="'logo footer'">
+                    </div>
+                    <div class="slogan-footer">{{ store.footerColumns.slogan }}</div>
+                </div>
                 <div class="col-3 d-flex justify-content-center align-items-center">col</div>
                 <div class="col-3 d-flex justify-content-center align-items-center">col</div>
                 <div class="col-3 d-flex justify-content-center align-items-center">col</div>
@@ -37,7 +48,7 @@ import { store } from '../data/store'
         border: 1px solid black;
 
         .container{
-            width: 1300px;
+            width: 1150px;
             height: 100%;
             border: 1px solid black;
 

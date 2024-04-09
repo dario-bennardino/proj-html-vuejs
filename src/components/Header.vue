@@ -25,13 +25,13 @@ import { store } from '../data/store';
 <template>
     <div class="navbar">
         <div class="logo-navbar">
-            <img :src="getPathImage('logo-sidearea-1-1.png')" :alt="logo">
+            <img :src="getPathImage('logo-sidearea-1-1.png')" :alt="'logo'">
         </div>
         <div class="link-navbar d-flex ">
 
             <a v-for="(link, index) in store.links" :key="index" :href="link.url">{{ link.text }}</a>
             <!-- <i class="fa-solid fa-list-ul"></i> -->
-            <img :src="getPathSVG('svg-1.svg')" :alt="iconaMenu">
+            <img :src="getPathSVG('svg-1.svg')" :alt="'iconaMenu'">
 
         </div>
     </div>

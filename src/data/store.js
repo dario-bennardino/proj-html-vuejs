@@ -15,7 +15,8 @@ export const store = reactive({
 
         { email: 'maree.qode@gmail.com' },
         { phone: '+44645 321 789' },
-        { address: 'Avenue d Audergem 10 1040 Brussels, Belgium' },
-        { social: 'Stay in touch with us' }
+        { address: "Avenue d'Audergem 10 1040 Brussels, Belgium" },
+        { social: 'Stay in touch with us' },
+        { slogan: "Let's Get Creative" }
     ]
 })
