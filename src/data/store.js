@@ -9,5 +9,13 @@ export const store = reactive({
         { text: 'SHOP', url: '#' },
         { text: 'ELEMENTS', url: '#' }
 
+    ],
+
+    footerColumns: [
+
+        { email: 'maree.qode@gmail.com' },
+        { phone: '+44645 321 789' },
+        { address: 'Avenue d Audergem 10 1040 Brussels, Belgium' },
+        { social: 'Stay in touch with us' }
     ]
 })
