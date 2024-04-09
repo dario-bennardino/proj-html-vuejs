@@ -30,10 +30,10 @@ import { store } from '../data/store'
 
             <div class="box-img-jumbotron d-flex">
                 <div class="box-img-jumbotron-sx d-flex justify-content-center align-items-center">
-                    <img :src="getPathImage('h-2-slider-img-15.png')" :alt="imgJumbotronSx">
+                    <img :src="getPathImage('h-2-slider-img-15.png')" :alt="'imgJumbotronSx'">
                 </div>
                 <div class="box-img-jumbotron-dx d-flex justify-content-center align-items-center">
-                    <img :src="getPathImage('h-2-slider-img-16.png')" :alt="imgJumbotronDx">
+                    <img :src="getPathImage('h-2-slider-img-16.png')" :alt="'imgJumbotronDx'">
                 </div>
 
             </div>
