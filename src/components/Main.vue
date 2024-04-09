@@ -28,8 +28,6 @@ import CardGallery from './CardGallery.vue';
         <section class="main-gallery">
             <div class="row row-cols-3">
                 <CardGallery/>
-
-
                 <!-- <div class="col-4">col</div>
                 <div class="col-4">col</div>
                 <div class="col-4">col</div>
@@ -37,15 +35,63 @@ import CardGallery from './CardGallery.vue';
                 <div class="col-4">col</div>
                 <div class="col-4">col</div> -->
             </div>
-            
-
         </section>
+    </section>
+
+    <section class="working-process">
+        <div class="container">
+            <h1>Working <span>process</span> </h1>
+            <div class="working-process-gallery">
+                <!-- <img src="/public/assets/svg/svg-3.svg" alt=""> -->
+                <div class="row">
+                    <div class="col-4">
+                        <div class="card-img">
+                            <div class="card-img-fix d-flex justify-content-center align-items-center ">
+                                <i class="fa-solid fa-lightbulb"></i>
+                            </div>
+                        </div>
+                        <div class="card-text text-center d-flex align-item-center flex-column justify-content-center">
+                            <h5>First theres an idea</h5>
+                            <h6>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque aperiam quas tempore sequi.</h6>
+                        </div>
+                    </div>
+
+                    <div class="col-4">
+                        <div class="card-img">
+                            <div class="card-img-fix d-flex justify-content-center align-items-center ">
+                                <i class="fa-solid fa-cloud"></i>
+                            </div>
+                        </div>
+                        <div class="card-text text-center d-flex align-item-center flex-column justify-content-center">
+                            <h5>First theres an idea</h5>
+                            <h6>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque aperiam quas tempore sequi.</h6>
+                        </div>
+                    </div>
+
+                    <div class="col-4">
+                        <div class="card-img">
+                            <div class="card-img-fix d-flex justify-content-center align-items-center ">
+                                <i class="fa-solid fa-pen"></i>
+                            </div>
+                        </div>
+                        <div class="card-text text-center d-flex align-item-center flex-column justify-content-center">
+                            <h5>First theres an idea</h5>
+                            <h6>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque aperiam quas tempore sequi.</h6>
+                        </div>
+                    </div>
+                    <!-- <div class="col-4">colonna</div>
+                    <div class="col-4">colonna</div> -->
+                </div>
+            </div>
+        </div>
+
     </section>
 </template>
 
 
 
 <style lang="scss" scoped>
+@import '../assets/scss/partials/variables';
     .main{
         width: 100vw;
         height: 1550px;
@@ -58,13 +104,98 @@ import CardGallery from './CardGallery.vue';
                 height: 100%;
 
             }
-
-                // .col-4{
-                //     border: 1px solid black;
-                //     height: 50%;
-                    
-                // }
+               
         }
     }
+
+    .working-process{
+            width: 100%;
+            height: 710px;
+            border: 1px solid black;
+            display: flex;
+            align-items: center;
+            justify-items: center;
+            
+
+            .container{
+                width: 1300px;
+                height: 80%;
+                border: 1px solid black;
+
+                h1{
+                    color: black;
+                    text-align: center;
+                    // margin-top: 50px;
+                    font-size: 4rem;
+
+                    span{
+                        font-style: italic;
+                        font-weight: bold;
+                        font-size: 4.3rem;
+                    }
+                }
+
+                .working-process-gallery{
+                    // border: 1px solid black;
+                    height: 300px;
+                    // text-align: center;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin: 50px;
+                    img{
+                        width: 100%;
+                    }
+
+                    .row{
+                        height: 100%;
+                        width: 100%;
+
+                        .col-4{
+                            height: 100%;
+                            // background-color: aqua;
+                            border: 1px solid black;
+                            
+
+                            .card-img{
+                                height: 50%;
+                                width: 100%;
+                                // border: 1px solid black;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                
+
+                                .card-img-fix{
+                                    height: 140px;
+                                    width: 140px;
+                                    border-radius: 50%;
+                                    background-color: $bg-color-6;
+
+                                    i{
+                                        color: $bg-color-8;
+                                        font-size: 2rem;
+                                    }
+                                }
+                            }
+
+                            .card-text{
+                                height: 50%;
+                                width: 100%;
+                                // border: 1px solid black;
+
+                                h5{
+                                    color: $text-color-11;
+                                }
+
+                                h6{
+                                    color: $text-color-5;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
 
 </style>
