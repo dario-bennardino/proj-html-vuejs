@@ -51,8 +51,12 @@ import { store } from '../data/store'
                 <div class="col-3 d-flex justify-content-center align-items-center">
                     <div class="social-contact">
                         <h6>Stay in contact with us</h6>
-                        <div class="social-media-icons">
-                            icone
+                        <div class="social-media-icons text-center ">
+                            <i v-for="(icon, index) in this.store.socialIcons" :key="index" :class="icon.iconClass"></i>
+                            <!-- <i class="fa-solid fa-x"></i>
+                            <i class="fa-brands fa-pinterest"></i>
+                            <i class="fab fa-facebook-f"></i>
+                            <i class="fab fa-linkedin-in"></i> -->
                         </div>
                     </div>
                 </div>
@@ -72,20 +76,21 @@ import { store } from '../data/store'
         height: 135px;
         width: 100vw;
         background-color: $bg-color-8;
-        border: 1px solid black;
 
         .container{
             width: 1150px;
             height: 100%;
-            border: 1px solid black;
 
             .col-3{
-                border: 1px solid black;
                 height: 100%;
 
                 h6{
                     font-size: 0.7rem;
                     color: $text-color-9;
+                }
+
+                i{
+                    width: 25%;
                 }
             }
         }
