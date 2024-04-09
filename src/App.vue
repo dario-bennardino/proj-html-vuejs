@@ -4,6 +4,7 @@ import Header from './components/Header.vue';
 import Main from './components/Main.vue';
 import Footer from './components/Footer.vue';
 import Jumbotron from './components/Jumbotron.vue';
+import CardGallery from './components/CardGallery.vue';
 
   export default {
     components:{
@@ -11,7 +12,7 @@ import Jumbotron from './components/Jumbotron.vue';
       Jumbotron, 
       Main,
       Footer,
-
+      CardGallery,
     }
   }
 </script>

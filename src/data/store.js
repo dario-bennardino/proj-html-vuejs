@@ -41,5 +41,14 @@ export const store = reactive({
             iconClass: 'fa-solid fa-x'
         }
 
+    ],
+
+    imageCardGallery: [
+        'h-2-port-img-1.jpg',
+        'h-2-port-img-2.jpg',
+        'h-2-port-img-3.jpg',
+        'h-2-port-img-4.jpg',
+        'h-2-port-img-5.jpg',
+        'h-2-port-img-6.jpg'
     ]
 })
