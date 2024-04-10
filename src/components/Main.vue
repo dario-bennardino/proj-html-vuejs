@@ -1,9 +1,11 @@
 <script>
 import { store } from '../data/store'
 import CardGallery from './CardGallery.vue';
+import CardEvents from './CardEvents.vue';
     export default {
         components:{
             CardGallery,
+            CardEvents,
         },
 
         data(){
@@ -24,7 +26,10 @@ import CardGallery from './CardGallery.vue';
 </script>
 
 <template>
+
     <section class="main">
+
+        <!-- SECTION MAIN -->
         <section class="main-gallery">
             <div class="row row-cols-3">
                 <CardGallery/>
@@ -54,6 +59,7 @@ import CardGallery from './CardGallery.vue';
         </section>
     </section>
 
+    <!-- SECTION PROCESS -->
     <section class="working-process">
         <div class="arrow d-flex justify-content-center align-items-center">
             <i class="fa-solid fa-arrow-up"></i>
@@ -117,15 +123,21 @@ import CardGallery from './CardGallery.vue';
 
     </section>
 
-    <section class="work-with-us">
+    <!-- SECTION WORK WITH US -->
+    <section class="work-with-us d-flex align-items-center justify-content-center ">
         <div class="container">
             Wanto to work with us?
         </div>
     </section>
 
+    <!-- SECTION EVENTS -->
     <section class="events d-flex align-items-center ">
         <div class="container d-flex justify-content-center justify-content-between">
-            <div class="card" style="width: 18rem;">
+
+            <CardEvents />
+          
+
+            <!-- <div class="card" style="width: 18rem;">
                 <img src="/public/assets/img/h-2-blog-img-1.jpg" class="card-img-top" alt="img-1">
                 <div class="card-body">
                     <h6 class="card-text">This way, loves: a detailed guide through new design</h6>
@@ -136,16 +148,18 @@ import CardGallery from './CardGallery.vue';
             <div class="card" style="width: 18rem;">
                 <img src="/public/assets/img/h-2-blog-img-2.jpg" class="card-img-top" alt="img-2">
                 <div class="card-body">
-                    <p class="card-text">I try to give people a different way of looking art</p>
+                    <h6 class="card-text">I try to give people a different way of looking art</h6>
+                    <h6>By Emily Fields</h6>
                 </div>
             </div>
 
             <div class="card" style="width: 18rem;">
                 <img src="/public/assets/img/h-2-blog-img-3.jpg" class="card-img-top" alt="img-3">
                 <div class="card-body">
-                    <p class="card-text">Introduce Richard Laperrière of those amazing features</p>
+                    <h6 class="card-text">Introduce Richard Laperrière of those amazing features</h6>
+                    <h6>By Emily Fields</h6>
                 </div>
-            </div>
+            </div> -->
         </div>
         <div class="arrow d-flex justify-content-center align-items-center">
             <i class="fa-solid fa-arrow-up"></i>
@@ -157,6 +171,8 @@ import CardGallery from './CardGallery.vue';
 
 <style lang="scss" scoped>
 @import '../assets/scss/partials/variables';
+
+    // SECTION MAIN
     .main{
         width: 100vw;
         height: 1550px;
@@ -210,16 +226,15 @@ import CardGallery from './CardGallery.vue';
                 position: absolute;
                 right: 0;
                 top: 130px;
-                
             
                     img{
                       width: 40px;
                       height: 40px;
                       color: white;
-                    }
-                   
+                    }     
             }
 
+        //SECTION MAIN GALLERY    
         .main-gallery{
             height: 100%;
             width: 100%;
@@ -251,17 +266,13 @@ import CardGallery from './CardGallery.vue';
                 bottom: 60px;
 
                 i{
-                    color: $text-color-1;
-                    
-                }
-                
+                    color: $text-color-1;  
+                } 
             }
             
-
             .container{
                 width: 1300px;
                 height: 80%;
-                // border: 1px solid black;
                 margin-bottom: 50px;
 
                 h1{
@@ -292,14 +303,11 @@ import CardGallery from './CardGallery.vue';
                         height: 100%;
                         width: 100%;
                         position: absolute;
-                        // top: 90px;
 
 
                         .col-3{
                             height: 100%;
-                            // border: 1px solid black;
                             
-
                             .card-img{
                                 height: 50%;
                                 width: 100%;
@@ -307,7 +315,6 @@ import CardGallery from './CardGallery.vue';
                                 align-items: center;
                                 justify-content: center;
                                 
-
                                 .card-img-fix{
                                     height: 140px;
                                     width: 140px;
@@ -371,8 +378,11 @@ import CardGallery from './CardGallery.vue';
     .events{
         width: 100vw;
         height: 725px;
-        background-color: lightcyan;
         position: relative;
+
+        .card{
+            border: white;
+        }
 
         .arrow{
                 background-color: $bg-color-8;
@@ -383,17 +393,12 @@ import CardGallery from './CardGallery.vue';
                 top: 55px;
 
                 i{
-                    color: $text-color-1;
-                    
+                    color: $text-color-1;   
                 }
-                
             }
 
         .container{
             width: 1300px;
-            border: 1px solid black;
-
-
         }
     }
 

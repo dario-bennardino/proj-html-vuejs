@@ -5,6 +5,7 @@ import Main from './components/Main.vue';
 import Footer from './components/Footer.vue';
 import Jumbotron from './components/Jumbotron.vue';
 import CardGallery from './components/CardGallery.vue';
+import CardEvents from './components/CardEvents.vue';
 
   export default {
     components:{
