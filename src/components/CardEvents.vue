@@ -40,7 +40,6 @@ import { store } from '../data/store'
         
         h7{
             font-style: italic;
-        }
-        
+        }   
     }
 </style>

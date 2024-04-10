@@ -52,11 +52,9 @@ import { store } from '../data/store'
                     <div class="social-contact">
                         <h6>Stay in contact with us</h6>
                         <div class="social-media-icons text-center ">
+                            
                             <i v-for="(icon, index) in this.store.socialIcons" :key="index" :class="icon.iconClass"></i>
-                            <!-- <i class="fa-solid fa-x"></i>
-                            <i class="fa-brands fa-pinterest"></i>
-                            <i class="fab fa-facebook-f"></i>
-                            <i class="fab fa-linkedin-in"></i> -->
+                            
                         </div>
                     </div>
                 </div>

@@ -32,13 +32,9 @@ import CardEvents from './CardEvents.vue';
         <!-- SECTION MAIN -->
         <section class="main-gallery">
             <div class="row row-cols-3">
+
                 <CardGallery/>
-                <!-- <div class="col-4">col</div>
-                <div class="col-4">col</div>
-                <div class="col-4">col</div>
-                <div class="col-4">col</div>
-                <div class="col-4">col</div>
-                <div class="col-4">col</div> -->
+                
             </div>
 
             <!-- ICONE -->
@@ -61,14 +57,18 @@ import CardEvents from './CardEvents.vue';
 
     <!-- SECTION PROCESS -->
     <section class="working-process">
+
         <div class="arrow d-flex justify-content-center align-items-center">
             <i class="fa-solid fa-arrow-up"></i>
         </div>
+
         <div class="container">
             <h1>Working <span>process</span> </h1>
+
             <div class="working-process-gallery">
                 <img src="/public/assets/svg/svg-3.svg" alt="">
                 <div class="row">
+
                     <div class="col-3">
                         <div class="card-img">
                             <div class="card-img-fix d-flex justify-content-center align-items-center ">
@@ -133,7 +133,6 @@ import CardEvents from './CardEvents.vue';
                 CONTACT
             </button>
             </div>
-            
         </div>
     </section>
 
@@ -143,30 +142,6 @@ import CardEvents from './CardEvents.vue';
 
             <CardEvents />
           
-
-            <!-- <div class="card" style="width: 18rem;">
-                <img src="/public/assets/img/h-2-blog-img-1.jpg" class="card-img-top" alt="img-1">
-                <div class="card-body">
-                    <h6 class="card-text">This way, loves: a detailed guide through new design</h6>
-                    <h6>By Emily Fields</h6>
-                </div>
-            </div>
-
-            <div class="card" style="width: 18rem;">
-                <img src="/public/assets/img/h-2-blog-img-2.jpg" class="card-img-top" alt="img-2">
-                <div class="card-body">
-                    <h6 class="card-text">I try to give people a different way of looking art</h6>
-                    <h6>By Emily Fields</h6>
-                </div>
-            </div>
-
-            <div class="card" style="width: 18rem;">
-                <img src="/public/assets/img/h-2-blog-img-3.jpg" class="card-img-top" alt="img-3">
-                <div class="card-body">
-                    <h6 class="card-text">Introduce Richard Laperrière of those amazing features</h6>
-                    <h6>By Emily Fields</h6>
-                </div>
-            </div> -->
         </div>
         <div class="arrow d-flex justify-content-center align-items-center">
             <i class="fa-solid fa-arrow-up"></i>
@@ -195,8 +170,7 @@ import CardEvents from './CardEvents.vue';
 
                 i{
                     color: $text-color-1;   
-                }
-                
+                }   
             }
 
             .arrow-btn-top{
@@ -209,7 +183,6 @@ import CardEvents from './CardEvents.vue';
 
                 i{
                     color: $text-color-1;
-                   
                 }
             }
 
@@ -248,9 +221,7 @@ import CardEvents from './CardEvents.vue';
 
             .row{
                 height: 100%;
-
-            }
-               
+            }              
         }
     }
 
@@ -310,7 +281,6 @@ import CardEvents from './CardEvents.vue';
                         height: 100%;
                         width: 100%;
                         position: absolute;
-
 
                         .col-3{
                             height: 100%;
@@ -416,10 +386,6 @@ import CardEvents from './CardEvents.vue';
         width: 100vw;
         height: 725px;
         position: relative;
-
-        // .card{
-        //     border: white;
-        // }
 
         .arrow{
                 background-color: $bg-color-8;

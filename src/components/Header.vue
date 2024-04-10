@@ -30,7 +30,6 @@ import { store } from '../data/store';
         <div class="link-navbar d-flex ">
 
             <a v-for="(link, index) in store.links" :key="index" :href="link.url">{{ link.text }}</a>
-            <!-- <i class="fa-solid fa-list-ul"></i> -->
             <img :src="getPathSVG('svg-1.svg')" :alt="'iconaMenu'">
 
         </div>
@@ -56,9 +55,9 @@ import { store } from '../data/store';
                 color: $text-color-9;
             }
 
-            i{
+            img{
                 color: $text-color-9;
-                padding: 20px;
+                margin-left: 25px;
             }
 
             .link-navbar{

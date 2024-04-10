@@ -31,13 +31,11 @@ import { store } from '../data/store'
 <style lang="scss" scoped>
     .col-4{
         height: 50%;
-
-        
+      
         img{
             max-width: 100%;
             object-fit: cover;
             height: 100%;
-        }
-                    
+        }              
     }
 </style>
