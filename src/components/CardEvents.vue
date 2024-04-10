@@ -24,7 +24,7 @@ import { store } from '../data/store'
         <img :src="getPathImage(card.image)" class="card-img-top" :alt="'Immage events'">
          <div class="card-body">
             <h6 class="card-text">{{ card.title }}</h6>
-            <h6>{{ card.author }}</h6>
+            <h7>{{ card.author }}</h7>
         </div>
     </div>
         
@@ -38,6 +38,9 @@ import { store } from '../data/store'
         margin: 10px;
         cursor: pointer;
         
+        h7{
+            font-style: italic;
+        }
         
     }
 </style>

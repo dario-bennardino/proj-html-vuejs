@@ -38,6 +38,12 @@ import { store } from '../data/store'
 
             </div>
         </div>
+        <div class="img-jumbo-first">
+            <img src="/public/assets/img/short-slider-rev-1-img-2.png" alt="">
+        </div>
+        <div class="img-jumbo-second">
+            <img src="/public/assets/img/short-slider-rev-1-img-6.png" alt="">
+        </div>
     </div>
 </template>
 
@@ -51,6 +57,19 @@ import { store } from '../data/store'
         width: 100vw;
         justify-content: center;
         align-items: center;
+        position: relative;
+
+        .img-jumbo-first{
+            position: absolute;
+            top: 115px;
+            right: 970px;
+        }
+
+        .img-jumbo-second{
+            position: absolute;
+            top: 210px;
+            right: 295px;
+        }
 
         .container_{
 
