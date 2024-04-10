@@ -20,7 +20,7 @@ import { store } from '../data/store'
 
 <template>
     <div class="jumbotron d-flex "> 
-        <div class="container_ d-flex ">
+        <div class="container d-flex ">
 
             <div class="box-text-jumbotron">
                 <h1 class="text-start">Devotion that never <span class="fw-bold">ends</span></h1>
@@ -107,7 +107,7 @@ import { store } from '../data/store'
             right: 1050px;
         }
 
-        .container_{
+        .container{
 
             width: 1450px;
             height: 500px;            
