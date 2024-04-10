@@ -36,6 +36,7 @@ import { store } from '../data/store'
     .card{
         border: white;
         margin: 10px;
+        cursor: pointer;
         
         
     }

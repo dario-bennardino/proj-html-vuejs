@@ -125,8 +125,15 @@ import CardEvents from './CardEvents.vue';
 
     <!-- SECTION WORK WITH US -->
     <section class="work-with-us d-flex align-items-center justify-content-center ">
-        <div class="container">
-            Wanto to work with us?
+        <div class="container text-center">
+            <h1>Want to work with us? Send us <span>a message!</span></h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati excepturi pariatur, vero adipisci quia voluptatum quibusdam? Maxime voluptates at tenetur iusto pariatur culpa ducimus soluta ipsa ab nihil, adipisci quam accusantium saepe.</p>
+            <div class="btn-row">
+                <button class="btn-work-with-us">
+                CONTACT
+            </button>
+            </div>
+            
         </div>
     </section>
 
@@ -370,11 +377,41 @@ import CardEvents from './CardEvents.vue';
 
         .container{
             width: 1300px;
-            border: 1px solid black;
+            // border: 1px solid black;
+
+            h1{
+                font-size: 4rem;
+
+                span{
+                    font-weight: bold;
+                    font-style: italic;
+                }
+            }
+
+            p{
+                margin-top: 20px;
+                color: $text-color-5;
+            }
+
+            .btn-row{
+                display: flex;
+                justify-content: center;
+
+                .btn-work-with-us{
+                    width: 225px;
+                    height: 57px;
+                    background-color: $bg-color-7;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border: none;
+                    margin-top: 30px;
+                }
+            }    
         }
     }   
     
-    //SECTION EVEN
+    //SECTION EVENTS
     .events{
         width: 100vw;
         height: 725px;

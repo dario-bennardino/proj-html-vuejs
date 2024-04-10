@@ -64,7 +64,11 @@ import { store } from '../data/store'
                 padding: 50px;
 
                 h1{
-                    font-size: 4.5rem;   
+                    font-size: 4.5rem;
+                    
+                    span{
+                        font-style: italic;
+                    }
                 }
 
                 p{
