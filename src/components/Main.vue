@@ -35,10 +35,29 @@ import CardGallery from './CardGallery.vue';
                 <div class="col-4">col</div>
                 <div class="col-4">col</div> -->
             </div>
+
+            <!-- ICONE -->
+            <div class="arrow d-flex justify-content-center align-items-center">
+                <i class="fa-solid fa-arrow-up"></i>
+            </div>
+
+            <div class="arrow-btn-top d-flex justify-content-center align-items-center">
+                <i class="fa-solid fa-arrow-up"></i>
+            </div>
+
+            <div class="btn-shop d-flex justify-content-center align-items-center">
+                <img src="/public/assets/svg/svg-6.svg" alt="shop icon">
+            </div>
+            <div class="btn-balloon d-flex justify-content-center align-items-center">
+                <img src="/public/assets/svg/svg-7.svg" alt="balloon icon">
+            </div>
         </section>
     </section>
 
     <section class="working-process">
+        <div class="arrow d-flex justify-content-center align-items-center">
+            <i class="fa-solid fa-arrow-up"></i>
+        </div>
         <div class="container">
             <h1>Working <span>process</span> </h1>
             <div class="working-process-gallery">
@@ -104,9 +123,32 @@ import CardGallery from './CardGallery.vue';
         </div>
     </section>
 
-    <section class="events">
-        <div class="container">
-            last section
+    <section class="events d-flex align-items-center ">
+        <div class="container d-flex justify-content-center justify-content-between">
+            <div class="card" style="width: 18rem;">
+                <img src="/public/assets/img/h-2-blog-img-1.jpg" class="card-img-top" alt="img-1">
+                <div class="card-body">
+                    <h6 class="card-text">This way, loves: a detailed guide through new design</h6>
+                    <h6>By Emily Fields</h6>
+                </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+                <img src="/public/assets/img/h-2-blog-img-2.jpg" class="card-img-top" alt="img-2">
+                <div class="card-body">
+                    <p class="card-text">I try to give people a different way of looking art</p>
+                </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+                <img src="/public/assets/img/h-2-blog-img-3.jpg" class="card-img-top" alt="img-3">
+                <div class="card-body">
+                    <p class="card-text">Introduce Richard Laperrière of those amazing features</p>
+                </div>
+            </div>
+        </div>
+        <div class="arrow d-flex justify-content-center align-items-center">
+            <i class="fa-solid fa-arrow-up"></i>
         </div>
     </section>
 </template>
@@ -118,6 +160,65 @@ import CardGallery from './CardGallery.vue';
     .main{
         width: 100vw;
         height: 1550px;
+        position: relative;
+
+        .arrow{
+                background-color: $bg-color-8;
+                width: 45px;
+                height: 45px;
+                position: absolute;
+                right: 18px;
+                bottom: 40px;
+
+                i{
+                    color: $text-color-1;   
+                }
+                
+            }
+
+            .arrow-btn-top{
+                background-color: $bg-color-8;
+                width: 45px;
+                height: 45px;
+                position: absolute;
+                right: 0;
+                top: 775px; 
+
+                i{
+                    color: $text-color-1;
+                   
+                }
+            }
+
+            .btn-shop{
+                width: 40px;
+                height: 40px;
+                background-color: $bg-color-1;
+                position: absolute;
+                right: 0;
+                top: 180px;
+
+                img{
+                    width: 40%;
+                }
+            }
+
+            .btn-balloon{
+                width: 40px;
+                height: 40px;
+                background-color: $bg-color-1;
+                position: absolute;
+                right: 0;
+                top: 130px;
+                
+            
+                    img{
+                      width: 40px;
+                      height: 40px;
+                      color: white;
+                    }
+                   
+            }
 
         .main-gallery{
             height: 100%;
@@ -131,6 +232,7 @@ import CardGallery from './CardGallery.vue';
         }
     }
 
+    //SECTION WORKING PROCESS
     .working-process{
             width: 100%;
             height: 710px;
@@ -138,6 +240,22 @@ import CardGallery from './CardGallery.vue';
             display: flex;
             align-items: center;
             justify-items: center;
+            position: relative;
+
+            .arrow{
+                background-color: $bg-color-8;
+                width: 45px;
+                height: 45px;
+                position: absolute;
+                right: 20px;
+                bottom: 60px;
+
+                i{
+                    color: $text-color-1;
+                    
+                }
+                
+            }
             
 
             .container{
@@ -237,7 +355,7 @@ import CardGallery from './CardGallery.vue';
                 }
             }
         }
-
+    //SECTION WORK WITH US
     .work-with-us{
         width: 100vw;
         height: 525px;
@@ -249,14 +367,32 @@ import CardGallery from './CardGallery.vue';
         }
     }   
     
+    //SECTION EVEN
     .events{
         width: 100vw;
         height: 725px;
         background-color: lightcyan;
+        position: relative;
+
+        .arrow{
+                background-color: $bg-color-8;
+                width: 45px;
+                height: 45px;
+                position: absolute;
+                right: 20px;
+                top: 55px;
+
+                i{
+                    color: $text-color-1;
+                    
+                }
+                
+            }
 
         .container{
             width: 1300px;
             border: 1px solid black;
+
 
         }
     }
