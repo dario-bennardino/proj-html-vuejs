@@ -20,11 +20,11 @@ import { store } from '../data/store'
 
 <template>
 
-    <div v-for="(image, index) in this.store.imageCardEvents" :key="index" class="card" style="width: 18rem;">
-        <img :src="getPathImage(image)" class="card-img-top" :alt="'Immage events'">
+    <div v-for="(card, index) in this.store.imageCardEvents" :key="index" class="card" style="width: 19rem;">
+        <img :src="getPathImage(card.image)" class="card-img-top" :alt="'Immage events'">
          <div class="card-body">
-            <h6 class="card-text">This way, loves: a detailed guide through new design</h6>
-            <h6>By Emily Fields</h6>
+            <h6 class="card-text">{{ card.title }}</h6>
+            <h6>{{ card.author }}</h6>
         </div>
     </div>
         
@@ -32,5 +32,11 @@ import { store } from '../data/store'
 
 
 <style lang="scss" scoped>
-
+@import '../assets/scss/partials/variables';
+    .card{
+        border: white;
+        margin: 10px;
+        
+        
+    }
 </style>

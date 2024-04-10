@@ -52,9 +52,27 @@ export const store = reactive({
         'h-2-port-img-6.jpg'
     ],
 
+    // imageCardEvents: [
+    //     'h-2-blog-img-1.jpg',
+    //     'h-2-blog-img-2.jpg',
+    //     'h-2-blog-img-3.jpg'
+    // ],
+
     imageCardEvents: [
-        'h-2-blog-img-1.jpg',
-        'h-2-blog-img-2.jpg',
-        'h-2-blog-img-3.jpg'
+        {
+            image: 'h-2-blog-img-1.jpg',
+            title: 'This way, loves: a detailed guide through new design',
+            author: 'By Emily Fields'
+        },
+        {
+            image: 'h-2-blog-img-2.jpg',
+            title: 'I try to give people a different way of looking art',
+            author: 'By Emily Fields'
+        },
+        {
+            image: 'h-2-blog-img-3.jpg',
+            title: 'Introduce Richard Laperrière of those amazing features',
+            author: 'By Emily Fields'
+        }
     ]
 })

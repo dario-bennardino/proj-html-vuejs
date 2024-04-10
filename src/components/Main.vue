@@ -132,7 +132,7 @@ import CardEvents from './CardEvents.vue';
 
     <!-- SECTION EVENTS -->
     <section class="events d-flex align-items-center ">
-        <div class="container d-flex justify-content-center justify-content-between">
+        <div class="container d-flex justify-content-center ">
 
             <CardEvents />
           
@@ -380,9 +380,9 @@ import CardEvents from './CardEvents.vue';
         height: 725px;
         position: relative;
 
-        .card{
-            border: white;
-        }
+        // .card{
+        //     border: white;
+        // }
 
         .arrow{
                 background-color: $bg-color-8;
