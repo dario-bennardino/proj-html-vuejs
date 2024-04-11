@@ -52,12 +52,6 @@ export const store = reactive({
         'h-2-port-img-6.jpg'
     ],
 
-    // imageCardEvents: [
-    //     'h-2-blog-img-1.jpg',
-    //     'h-2-blog-img-2.jpg',
-    //     'h-2-blog-img-3.jpg'
-    // ],
-
     imageCardEvents: [
         {
             image: 'h-2-blog-img-1.jpg',

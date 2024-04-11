@@ -29,7 +29,7 @@ import CardEvents from './CardEvents.vue';
 
     <section class="main">
 
-        <!-- SECTION MAIN -->
+        <!-- SECTION MAIN GALLERY -->
         <section class="main-gallery">
             <div class="row row-cols-3">
 
@@ -55,7 +55,7 @@ import CardEvents from './CardEvents.vue';
         </section>
     </section>
 
-    <!-- SECTION PROCESS -->
+    <!-- SECTION WORKING PROCESS -->
     <section class="working-process">
 
         <div class="arrow d-flex justify-content-center align-items-center">
@@ -273,7 +273,7 @@ import CardEvents from './CardEvents.vue';
                     justify-content: center;
                     margin-top: 100px;
                     img{
-                        width: 90%;
+                        width: 84%;
                         margin-bottom: 200px;
                     }
 
@@ -299,7 +299,6 @@ import CardEvents from './CardEvents.vue';
                                     background-color: $bg-color-6;
 
                                     i{
-                                        // color: $bg-color-8;
                                         font-size: 2rem;
                                     }
 
@@ -347,7 +346,6 @@ import CardEvents from './CardEvents.vue';
 
         .container{
             width: 1300px;
-            // border: 1px solid black;
 
             h1{
                 font-size: 4rem;
@@ -376,7 +374,15 @@ import CardEvents from './CardEvents.vue';
                     justify-content: center;
                     border: none;
                     margin-top: 30px;
+                    
+                
                 }
+
+                .btn-work-with-us:hover{
+                    background-color: $bg-color-9;
+                    transition: background-color 1s;
+                }
+
             }    
         }
     }   

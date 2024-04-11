@@ -115,7 +115,6 @@ import { store } from '../data/store'
             .box-text-jumbotron{
                 width: 50%;
                 height: 100%;
-                background-color: white;
                 padding-right: 140px;
 
                 h1{
@@ -142,6 +141,7 @@ import { store } from '../data/store'
 
                 .btn:hover{
                     background-color: $bg-color-9;
+                    transition: background-color 1s;
                 }
                 
             }
